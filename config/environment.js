@@ -20,6 +20,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.apiHost = 'http://localhost:4200'
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -40,6 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.apiHost = '';
 
   }
 
